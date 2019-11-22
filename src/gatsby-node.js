@@ -35,6 +35,7 @@ exports.onCreateWebpackConfig = ({ actions, plugins }, pluginOptions) => {
 }
 
 exports.onCreatePage = async ({ page, actions }, pluginOptions) => {
+  return null;
   //Exit if the page has already been processed.
   if (typeof page.context.intl === "object") {
     return
